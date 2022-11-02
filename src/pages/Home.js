@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Intro from '../components/Intro'
-import Mystacks from '../components/Mystacks'
+import Intro from '../components/Homepagecomponents/Intro'
+import Mystacks from '../components/Homepagecomponents/Mystacks'
 
 const Homewrap = styled.section`
-min-height: 100vh;
+height: fit-content;
 max-width: 100%;
 `
 

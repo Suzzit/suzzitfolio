@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import styled from 'styled-components';
+import emailjs from '@emailjs/browser';
+import image from "../images/logo.png";
 
 const ContactWrapper = styled.section`
     width: 100%;
@@ -30,6 +32,7 @@ const ContactWrapper = styled.section`
         font-family: 'Courier New', Courier, monospace;
         font-weight: 600;
         font-size: 15px;
+        border: 1px solid black;
     }
 
     #message{
@@ -38,6 +41,8 @@ const ContactWrapper = styled.section`
         padding: 5px;
         margin: 10px 0px;
         font-size: 15px;
+        border: 1px solid black;
+        resize: none;
     }
 
     #submitbtn{
@@ -53,17 +58,29 @@ const ContactWrapper = styled.section`
 `
 
 function Contact() {
-  return (
-    <ContactWrapper>
-        <form> 
-            <h2>Mail me</h2>
-            <input id="emailinput" type="text" placeholder="Your email" required />
-            <textarea name="message" id="message" cols="50" placeholder="Message" rows="10" />
-            <input id="submitbtn" type="submit" value={"Send Mail"}/>
-        </form>
-    </ContactWrapper>
-  )
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_u13lkcu', 'template_wyba5cq', form.current, "UytteNavZyKjddpkI")
+            .then((result) => {
+                console.log(result);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+    return (
+        <ContactWrapper>
+            <form ref={form}>
+                <h2>Mail me</h2>
+                <input name='emailinput' id="emailinput" type="text" placeholder="Your email" required />
+                <textarea name="message" id="message" cols="50" placeholder="Message" rows="10" />
+                <input id="submitbtn" type="submit" value={"Send Mail"} onClick={sendEmail}/>
+            </form>
+        </ContactWrapper>
+    )
 }
 
 
-export default  Contact;
+export default Contact;

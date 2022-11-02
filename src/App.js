@@ -14,7 +14,7 @@ function App(props) {
         <Header navItems={["Home","Projects","Blog","Contact"]} />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route exact path='blog' element={<Blogpage />} />
+          <Route exact path='blog/*' element={<Blogpage />} />
           <Route exact path='projects' element={<Projects />} />
           <Route exact path='contact' element={<Contact />} />
         </Routes>

@@ -5,12 +5,14 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.div`
     height: 200px;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
+    margin-top: 5px;
+    padding: 20px;
+    
     .siteinfo{
       background-color: lightgray;
       height: fit-content;
@@ -52,7 +54,7 @@ const FooterWrapper = styled.div`
 function Footer() {
   return (
     <FooterWrapper>
-      <IconContext.Provider value={{size:"16px"}}>
+      <IconContext.Provider value={{size:"1rem"}}>
         <div className='siteinfo'> Site written in JavaScript using React Library </div>
         <p className="inspirations">Inspired from <a href="/" target="_blank">BhaskarRijal's site</a> <br /></p>
         <p className="policies"> <BiCopyright /> | <span>policies</span> 2022 </p>

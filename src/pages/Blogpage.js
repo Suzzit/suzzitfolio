@@ -1,7 +1,8 @@
 import React from 'react'
+import { Route, Router, Routes } from 'react-router-dom'
 import styled from 'styled-components'
-import Bloggenerator from '../components/Bloggenerator'
-// import Blog from '../components/Blog'
+import Bloggenerator from '../components/Blogpagecomponents/Blogfetcher'
+import Blogpost from '../components/Blogpagecomponents/Blogpost'
 
 const Wrapper = styled.section`
 width: 100%;
@@ -21,9 +22,14 @@ h1{
 export default function Blogpage() {
 
   return (
-    <Wrapper>
-      <h1>My Blogs</h1>
+    <>
+      <Wrapper>
+        <h1>My Blogs</h1>
         <Bloggenerator />
-    </Wrapper>
+        <Routes>
+          <Route exact path='/:blogTitle' element={<Blogpost />} />
+        </Routes>
+      </Wrapper>
+    </>
   )
 }

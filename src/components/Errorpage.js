@@ -35,12 +35,11 @@ const ErrorPage = styled.div`
 export default function Errorpage(props) {
   return (
     <ErrorPage>
-      <h2>Oop's...</h2> 
+      <h2>Oop's...</h2> <br/>
         <p>
-         <br/>My spidey sense tells something's not right
+          My spidey sense tells something's not right
         </p>
         <Link to={"/"}> Back to homepage</Link>
-        
     </ErrorPage>
   )
 }
