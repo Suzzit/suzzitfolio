@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1e479f98c29b4ecca1e1",
+    "revision": "aa84296572b61778c799",
     "url": "/suzzitfolio/static/css/main.2690c870.chunk.css"
   },
   {
-    "revision": "1e479f98c29b4ecca1e1",
-    "url": "/suzzitfolio/static/js/main.1e479f98.chunk.js"
+    "revision": "aa84296572b61778c799",
+    "url": "/suzzitfolio/static/js/main.aa842965.chunk.js"
   },
   {
     "revision": "4bb05d8fed1e4d6e8559",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/suzzitfolio/static/media/profile_image_final.a098d4bb.png"
   },
   {
-    "revision": "3538bf8d0e37fcc67cf9416d0163a271",
+    "revision": "426668e014e9a814a934928e9f815db5",
     "url": "/suzzitfolio/index.html"
   }
 ];
