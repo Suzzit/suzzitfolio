@@ -1,0 +1,42 @@
+.projectlister{
+    height: fit-content;
+    min-width: 100%;
+
+    h2{
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__list{
+        min-height: 500px;
+        height: fit-content;
+
+        &__card{
+            height: 20rem;
+            background-color: lightgray;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+
+            &__titlewrapper{
+                min-height: 100%;
+                width: 80%;
+
+                &__title{
+                    padding: 10px;
+                }
+
+                &__desc{
+                    padding: 10px;
+                    overflow: hidden;
+                }
+            }
+
+            &__img{
+                height: 100%;
+                min-width: 20%;
+                object-fit: contain;
+            }
+        }
+    }
+}
