@@ -17,6 +17,7 @@
         &__logo{
             height: 70px;
             width: 300px;
+            object-fit: contain;
         }
     }
 
@@ -75,16 +76,23 @@
             &__logo{
                 height: 100%;
                 width: 100%;
+                object-fit: contain;
             }
         }
 
         &__hamburgerwrapper{
-            display: inline;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: absolute;
-            top: 100%;
+            top: 0;
+            left: 100%;
+            transform: translateX(-100%);
             z-index: 99;
-            left: 0;
             font-size: 20px;
+            border-radius: 100%;
         }
 
         &__nav--show{
