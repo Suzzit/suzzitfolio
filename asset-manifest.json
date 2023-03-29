@@ -1,7 +1,7 @@
 {
-  "main.css": "/suzzitfolio/static/css/main.7e482932.chunk.css",
-  "main.js": "/suzzitfolio/static/js/main.3759e1a7.chunk.js",
-  "main.js.map": "/suzzitfolio/static/js/main.3759e1a7.chunk.js.map",
+  "main.css": "/suzzitfolio/static/css/main.ec426fd5.chunk.css",
+  "main.js": "/suzzitfolio/static/js/main.9331c354.chunk.js",
+  "main.js.map": "/suzzitfolio/static/js/main.9331c354.chunk.js.map",
   "static/js/1.e7e0e04a.chunk.js": "/suzzitfolio/static/js/1.e7e0e04a.chunk.js",
   "static/js/1.e7e0e04a.chunk.js.map": "/suzzitfolio/static/js/1.e7e0e04a.chunk.js.map",
   "static/js/2.ab845e9f.chunk.js": "/suzzitfolio/static/js/2.ab845e9f.chunk.js",
@@ -10,8 +10,8 @@
   "runtime~main.js.map": "/suzzitfolio/static/js/runtime~main.d2f5e25b.js.map",
   "static/media/profile_image_final.png": "/suzzitfolio/static/media/profile_image_final.a098d4bb.png",
   "static/media/logo.svg": "/suzzitfolio/static/media/logo.c3690d7f.svg",
-  "static/css/main.7e482932.chunk.css.map": "/suzzitfolio/static/css/main.7e482932.chunk.css.map",
+  "static/css/main.ec426fd5.chunk.css.map": "/suzzitfolio/static/css/main.ec426fd5.chunk.css.map",
   "index.html": "/suzzitfolio/index.html",
-  "precache-manifest.4a165edde200f9190fdd422f87ad4e10.js": "/suzzitfolio/precache-manifest.4a165edde200f9190fdd422f87ad4e10.js",
+  "precache-manifest.9dd1d7cbe083fbf22749c07796bfb50d.js": "/suzzitfolio/precache-manifest.9dd1d7cbe083fbf22749c07796bfb50d.js",
   "service-worker.js": "/suzzitfolio/service-worker.js"
 }
