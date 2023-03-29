@@ -2,6 +2,10 @@
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  background-color: white;
+  z-index: 10;
+  position: sticky;
+  top: 0;
 }
 @media (max-width: 330px) {
   .header {
@@ -28,7 +32,7 @@
   min-height: fit-content;
   display: flex;
   color: black;
-  background-color: red;
+  background-color: white;
   border-top: 1px solid rgb(160, 156, 156);
   border-bottom: 1px solid rgb(160, 156, 156);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -61,6 +65,9 @@
     height: -moz-fit-content;
     height: fit-content;
     position: relative;
+    z-index: 10;
+    position: sticky;
+    top: 0;
   }
   .header--mobile__logowrapper {
     height: 50px;

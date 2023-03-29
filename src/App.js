@@ -11,7 +11,7 @@ function App(props) {
   return (
     <div className="container">
       <Router basename={process.env.PUBLIC_URL}>
-        <Header navItems={["Home","Projects","Blog","Contact"]} />
+        <Header navItems={["Home","Projects","Blog","Contact",]} />
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='blog/*' element={<Blogpage />} />
