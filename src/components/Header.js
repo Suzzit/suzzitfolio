@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import * as icons from 'react-icons/all'
@@ -7,13 +7,24 @@ import logo from '../images/logo.svg'
 
 export default function Header(props) {
     const [showNav, setShowNav] = useState(false)
+    const [logoWrapperAbsolute, setLogoWrapperAbsolute] = useState(false)
+
+    useEffect(()=>{
+        window.addEventListener('scroll', (e)=>{
+            if(window.scrollY >= 50){
+             setLogoWrapperAbsolute(true)   
+            }else{
+                setLogoWrapperAbsolute(false)
+            }
+        })
+    })
 
     return (
         <>
     {/* desktop version */}
         <div className='header'>
 
-        <div className="header__logowrapper">
+        <div className='header__logowrapper'>
             <NavLink to={"/"}>
                 <img className='header__logowrapper__logo' src={logo} alt="logo" />
             </NavLink>
@@ -35,6 +46,7 @@ export default function Header(props) {
                 </li>
             </ul>
         </nav>
+
         <Sociallinks />
     </div>
 

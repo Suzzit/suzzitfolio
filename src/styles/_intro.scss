@@ -1,0 +1,86 @@
+.intro{
+    height: auto;
+    margin-top: 80px;
+
+    &__imgsection{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: clip;
+
+        &__profileimg{
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            object-fit: contain;
+            border-radius: 100%;
+            border: 1px solid black;
+            margin: 0px 0px 0px 20px;
+            
+        }
+
+        h2{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin: 0px 0px 0px 20px;
+            font: {
+                family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+                size: 4.5rem;
+            }
+            text-transform: uppercase;
+
+            span{
+                color: orange;
+            }
+        }
+    }
+
+
+    &__infosection{
+        padding-left: 20px;
+
+        &__role{
+            width: fit-content;
+            margin-left: 120px;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+            color: gray;
+        }
+
+        p{
+            padding-left: 120px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+            margin-top: 20px;
+            min-height: 120px;
+        }
+
+        &__links{
+            display: flex;
+            justify-content: flex-start;
+            height: fit-content;
+            padding: 10px 0px 10px 120px;
+
+            a{
+                color: black;
+                text-decoration: none;
+                margin: 0px 50px 0px 0px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 1.2rem;
+                background-color: orange;
+                height: 100%;
+                padding: 5px;
+                min-width: fit-content;
+                font-style: italic;
+            }
+        }
+    }
+}
