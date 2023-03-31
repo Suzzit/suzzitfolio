@@ -13,7 +13,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .grid_show{
@@ -26,7 +26,7 @@ h1{
 
     h2{
         margin: 20px 0px 0px 0px;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     div{
@@ -36,8 +36,7 @@ h1{
         align-items: center;
         justify-content: space-between;
         padding: 2px 10px;
-        font-family: 'Trebuchet MS';
-        font-weight: 600;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-style: italic;
     }
 }
@@ -49,13 +48,14 @@ function Mystacks() {
     <Wrapper>
         <h1>My Stacks</h1>
         <div className="grid_show">
-            <IconContext.Provider value={{color:"black", size:"25px"}}>
+            <IconContext.Provider value={{color:"black", size:"26px"}}>
             <h2>Frontend</h2>
-            <div>Javascript - ReactJS <icons.RiReactjsLine></icons.RiReactjsLine></div>
+            <div>Javascript - ReactJS <icons.SiReact></icons.SiReact></div>
+            <div>State Management - ReduxJS <icons.SiRedux></icons.SiRedux></div>
 
             <h2>Backend</h2>
-            <div>Javascript - NodeJS <icons.FaNodeJs></icons.FaNodeJs></div>
-            <div>Python - Django <icons.SiDjango></icons.SiDjango></div>
+            <div>NodeJS <icons.SiNodedotjs></icons.SiNodedotjs></div>
+            
 
             <h2>Database</h2>
             <div>MongoDB <icons.SiMongodb></icons.SiMongodb></div>

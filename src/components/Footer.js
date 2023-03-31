@@ -56,7 +56,7 @@ function Footer() {
     <FooterWrapper>
       <IconContext.Provider value={{size:"1rem"}}>
         <div className='siteinfo'> Site written in JavaScript using React Library </div>
-        <p className="inspirations">Inspired from <a href="/" target="_blank">BhaskarRijal's site</a> <br /></p>
+        <p className="inspirations">Inspired from <a href="https://www.bhaskarrijal.me" target="_blank">bhaskarrijal.me</a> <br /></p>
         <p className="policies"> <BiCopyright /> | <span>policies</span> 2022 </p>
       </IconContext.Provider>
     </FooterWrapper>
