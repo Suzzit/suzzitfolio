@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Route, Router, Routes } from 'react-router-dom'
 import styled from 'styled-components'
 import Bloggenerator from '../components/Blogpagecomponents/Blogfetcher'
@@ -21,6 +21,9 @@ h1{
 
 export default function Blogpage() {
 
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Wrapper>

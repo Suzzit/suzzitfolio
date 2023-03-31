@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
 import image from "../images/logo.png";
@@ -70,6 +70,10 @@ function Contact() {
                 console.log(error.text);
             });
     };
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <ContactWrapper>
             <form ref={form}>

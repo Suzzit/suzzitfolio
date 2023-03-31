@@ -8,12 +8,14 @@ export default function Intro(props) {
       <div className="intro__imgsection">
         <img className="intro__imgsection__profileimg" src={profile} alt="profile" />
         <h2>Suzz <span>it</span></h2>
+        <h4 className='intro__imgsection__role'>frontend developer</h4>
       </div>
 
       <div className="intro__infosection">
-        <h4 className='intro__infosection__role'>frontend developer</h4>
-        <p>Student of BSc. CSIT at Tribhuvan University</p>
-
+        <div className="intro__infosection__aboutme">
+        <p>Student of BSc. CSIT at Tribhuvan University. I love to Create new things and be creative every day</p>
+        </div>
+        
         <div className='intro__infosection__links'>
           <Link to='/projects'>My Works</Link>
           <Link to='/contact'>Contact Me</Link>
