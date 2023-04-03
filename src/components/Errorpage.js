@@ -37,7 +37,7 @@ export default function Errorpage(props) {
     <ErrorPage>
       <h2>Oop's...</h2> <br/>
         <p>
-          My spidey sense tells something's not right
+          Something's Gone Wrong
         </p>
         <Link to={"/"}> Back to homepage</Link>
     </ErrorPage>

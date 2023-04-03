@@ -1,7 +1,6 @@
 import React, {useRef, useEffect} from 'react'
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
-import image from "../images/logo.png";
 
 const ContactWrapper = styled.section`
     width: 100%;
